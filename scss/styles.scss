@@ -1,0 +1,76 @@
+@import 'reset';
+
+.box {
+    height: 200px;
+    border: 1px solid black;
+}
+
+.col-item {
+    border: 1px solid black;
+    padding: 10px;
+
+}
+
+.form-elements {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.item-spinner {
+    display: none !important;
+}
+
+input[type="checkbox"]:checked+.item-spinner {
+    display: inline-block !important;
+}
+
+.carousel-images {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.carousel-background {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .carousel-item-1,
+    .carousel-item-2,
+    .carousel-item-3 {
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .carousel-item-1 {
+        background-image: url('../images/image-1.svg');
+    }
+
+    .carousel-item-2 {
+        background-image: url('../images/image-2.svg');
+    }
+
+    .carousel-item-3 {
+        background-image: url('../images/image-3.svg');
+    }
+}
+
+main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+
+    .main-div {
+        height: 2000px;
+    }
+}
